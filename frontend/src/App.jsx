@@ -3,7 +3,7 @@ import { Mail, Send, RefreshCw, LogOut, User, Inbox, PlusCircle, ArrowLeft } fro
 import logo from './assets/Logo1_FABRICE_ADANLESSOSSI.png'
 import './App.css'
 
-const API = 'http://localhost:4001'
+const API = import.meta.env.VITE_API_URL || 'http://localhost:4001'
 
 function App() {
   const [user, setUser] = useState(() => {
